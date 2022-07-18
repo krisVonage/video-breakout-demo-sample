@@ -1,8 +1,5 @@
 npm init -y
-npm install nunjucks
-npm install express
-npm install nedb
-npm install opentok
-npm install dotenv
+
+npm install nunjucks express nedb opentok dotenv
 
 node index.js
