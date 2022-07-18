@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="css/app.css" rel="stylesheet" type="text/css">
+    <style>
+    /*div {
+        padding: 1em;
+        color: white;
+    }
+    #app {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        'h h h h h'
+        's s s c c'
+        's s s c c'
+        'p p l c c';
+      gap: 10px;
+    }
+    #publishers {
+        background: midnightblue;
+        grid-area: p;
+    }
+    #subscribers {
+        background: turquoise;
+        grid-area: s;
+    }
+    #h1 {
+        background: mediumvioletred;
+        grid-area: h;
+    }
+    #chat {
+        background: tomato;
+        grid-area: c;
+    }
+    #controls {
+        background: dodgerblue;
+        grid-area: l;
+    }*/
+    </style>
+  </head>
+  <body>
+    <table>
+      <div id="app">
+        <tr>
+          <th><h1 id="h1">{{room}}</h1></td>
+          <th><h2>Chat about something!</h2></td>
+        </tr>
+        <tr>
+          <td>
+            <div id="subscribers"></div>
+          </td>
+          <td bgcolor ="white">
+            <div id="chat">
+              <ul class="no-bull"></ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id="publishers"></div>
+          </td>
+          <td>
+            <input type="text" name="myName" placeholder="Your Name Here:">
+            <input type="text" name="chatter" placeholder="Chat Message Here:">
+            <button type="button" name="send" id="send">send message</button>
+            <div id="controls">
+              <button type="button" name="hangup">hangup call</button>
+            </div>
+          </td>
+        </tr>
+        </div>
+    </table>
+    <script type="text/javascript" src="https://static.opentok.com/v2/js/opentok.min.js">
+    </script>
+    <script type="text/javascript">
+      // add all vars here that will be passed to control.js
+      var apiKey = '{{apiKey}}';
+      var sessionId = '{{sessionId}}';
+      var token = '{{token}}';
+    </script>
+    <script type="text/javascript" src="js/control.js">
+    </script>
+  </body>
+</html>
